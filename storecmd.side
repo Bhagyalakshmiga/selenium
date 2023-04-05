@@ -1,0 +1,399 @@
+{
+  "id": "cdcaeecd-417a-40ef-9427-a34328464a60",
+  "version": "2.0",
+  "name": "storecmd",
+  "url": "https://letcode.in/alert",
+  "tests": [{
+    "id": "6217a45b-aa50-4d5b-8a97-053413175924",
+    "name": "t1",
+    "commands": [{
+      "id": "fed36be5-47d9-4bc6-886f-91e6a6e561b3",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa7efdd-e325-4040-ad56-1ad987e79007",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63ee6f03-628a-4859-9536-796e05104753",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show > .d-none",
+      "targets": [
+        ["css=.show > .d-none", "css:finder"],
+        ["xpath=//nav[@id='top']/div[2]/div[2]/ul/li[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c152469-a380-41a7-8e3c-55df0cf726a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.dropdown-menu-right > li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//nav[@id='top']/div[2]/div[2]/ul/li[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=account/login&language=en-gb')]", "xpath:href"],
+        ["xpath=//li[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82248836-d78a-4646-89e0-fc6a0a83f823",
+      "comment": "",
+      "command": "store",
+      "target": "abc@gamil.com",
+      "targets": [],
+      "value": "mail"
+    }, {
+      "id": "e4140b62-3fc7-46b5-9d6f-11defce0bca2",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06e56c22-7860-4342-88bd-8b38630eaa50",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "${mail}"
+    }, {
+      "id": "ed035b2b-721d-413c-a9ad-cd86c0337627",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a460485-3c66-40d8-9ac1-346ab8512bba",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "f6ca2f3f-2479-4692-b191-c3e89a5a65d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d6aa9fbb-95d0-4ff3-bbbb-6a68e8236ae8",
+    "name": "t2",
+    "commands": [{
+      "id": "73487c92-8bd8-46f1-b004-2675cf64a4e4",
+      "comment": "",
+      "command": "open",
+      "target": "https://mail.rediff.com/cgi-bin/login.cgi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dae8d8f2-9d0c-40d2-8af3-e04ccec76fa0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0efb909e-6a29-47c9-bf73-98f1eaa9f097",
+      "comment": "",
+      "command": "click",
+      "target": "name=proceed",
+      "targets": [
+        ["name=proceed", "name"],
+        ["css=.signinbtn", "css:finder"],
+        ["xpath=//input[@name='proceed']", "xpath:attributes"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "138d7252-a44b-4108-ae4d-31604b571548",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter a valid user name",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9895f24d-4fa7-4ac8-8697-935cc955189a",
+    "name": "t3",
+    "commands": [{
+      "id": "39596878-ff0b-4cc4-b490-d8a132627c6b",
+      "comment": "",
+      "command": "open",
+      "target": "https://letcode.in/alert",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5d8c319-c3ab-4ca8-9424-8c93b626c082",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f691497-058d-4f00-bc0b-25110fecb343",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed93c5b6-38cb-4482-b6ec-1ac19dc9221d",
+      "comment": "",
+      "command": "click",
+      "target": "id=accept",
+      "targets": [
+        ["id=accept", "id"],
+        ["css=#accept", "css:finder"],
+        ["xpath=//button[@id='accept']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simple Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34636c90-3cde-4abd-ae8c-49bf7ea35505",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hey! Welcome to LetCode",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a5ac790-2091-4825-8328-73207d761956",
+      "comment": "",
+      "command": "click",
+      "target": "id=accept",
+      "targets": [
+        ["id=accept", "id"],
+        ["css=#accept", "css:finder"],
+        ["xpath=//button[@id='accept']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simple Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c822a31-46c0-429a-99cb-b65715b02a90",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hey! Welcome to LetCode",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d94d17ac-c470-499f-8f4b-a616ed7427b6",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8625050d-d76a-4d8a-91ef-21d6d7993c8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//button[@id='confirm']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc2d699c-0107-4716-a2e2-ac1e1d72d4b3",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you happy with LetCode?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d47ff643-abfa-4110-a622-320081cfd044",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62dfb7d3-d323-4fb7-b01c-5b7468f30e03",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22103a63-f8eb-4792-a7bf-ff58f4856369",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//button[@id='confirm']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b72e5a91-e858-4506-bc20-cf10565f31c9",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you happy with LetCode?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a25d99a-6f98-4c66-b4e3-c6520dba3763",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f66d00bc-101a-43d7-bbd2-d6bbcee7905f",
+      "comment": "",
+      "command": "answerOnNextPrompt",
+      "target": "hii",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34e6f58-7190-420c-be75-372e365ce57d",
+      "comment": "",
+      "command": "click",
+      "target": "id=prompt",
+      "targets": [
+        ["id=prompt", "id"],
+        ["css=#prompt", "css:finder"],
+        ["xpath=//button[@id='prompt']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prompt Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "673c9ef0-3106-4dac-abd4-fc02f4928d9d",
+      "comment": "",
+      "command": "assertPrompt",
+      "target": "Enter your name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b59207a-1f3e-4cdb-a49c-ed18c3d8888c",
+      "comment": "",
+      "command": "webdriverAnswerOnVisiblePrompt",
+      "target": "hii",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "470cc88a-7a82-48de-bd3f-b1d0851acd7b",
+      "comment": "",
+      "command": "chooseCancelOnNextPrompt",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ce5a874-89f4-48be-a9e9-57e9d0262893",
+      "comment": "",
+      "command": "click",
+      "target": "id=prompt",
+      "targets": [
+        ["id=prompt", "id"],
+        ["css=#prompt", "css:finder"],
+        ["xpath=//button[@id='prompt']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prompt Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83b5dda8-c435-496a-ae76-3c725e917d90",
+      "comment": "",
+      "command": "assertPrompt",
+      "target": "Enter your name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46b77b88-62ac-47ae-adb3-01a358c4f508",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisiblePrompt",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7090a56-c31c-4a40-8459-7a1e569fe4cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=modern",
+      "targets": [
+        ["id=modern", "id"],
+        ["css=#modern", "css:finder"],
+        ["xpath=//button[@id='modern']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Modern Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d6b200-ceb0-40db-9100-6851c566109a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-close",
+      "targets": [
+        ["css=.modal-close", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "54db5bda-2ed6-455f-b884-2de7e4049f7d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6217a45b-aa50-4d5b-8a97-053413175924"]
+  }],
+  "urls": ["https://demo.opencart.com/", "https://mail.rediff.com/cgi-bin/login.cgi", "https://letcode.in/alert"],
+  "plugins": []
+}
